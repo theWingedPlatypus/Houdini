@@ -1,0 +1,418 @@
+# Initialize parent node variable.
+if locals().get("hou_parent") is None:
+    hou_parent = hou.node("/out")
+
+# Code for /out/SVG_exporter1
+hou_node = hou_parent.createNode("SVG_exporter", "SVG_exporter1", run_init_scripts=False, load_contents=True, exact_type_name=True)
+hou_node.move(hou.Vector2(-0.0506536, 0.748693))
+
+hou_node.bypass(False)
+hou_node.hide(False)
+hou_node.setLocked(False)
+hou_node.setSelected(True)
+
+# Code for /out/SVG_exporter1/execute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("execute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("0")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/renderpreview parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("renderpreview")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("0")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/executebackground parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("executebackground")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("0")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/renderdialog parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("renderdialog")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("0")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/trange parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("trange")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("off")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/f parm tuple
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm_tuple = hou_node.parmTuple("f")
+hou_parm_tuple.lock((False, False, False))
+hou_parm_tuple.deleteAllKeyframes()
+hou_parm_tuple.set((1, 240, 1))
+hou_parm_tuple.setAutoscope((False, False, False))
+
+# Code for first keyframe.
+# Code for keyframe.
+hou_keyframe = hou.Keyframe()
+hou_keyframe.setTime(0)
+hou_keyframe.setValue(1)
+hou_keyframe.useValue(False)
+hou_keyframe.setSlope(0)
+hou_keyframe.useSlope(False)
+hou_keyframe.setAccel(0)
+hou_keyframe.useAccel(False)
+hou_keyframe.setExpression("$FSTART", hou.exprLanguage.Hscript)
+hou_parm_tuple[0].setKeyframe(hou_keyframe)
+
+# Code for last keyframe.
+# Code for keyframe.
+hou_keyframe = hou.Keyframe()
+hou_keyframe.setTime(0)
+hou_keyframe.setValue(1)
+hou_keyframe.useValue(False)
+hou_keyframe.setSlope(0)
+hou_keyframe.useSlope(False)
+hou_keyframe.setAccel(0)
+hou_keyframe.useAccel(False)
+hou_keyframe.setExpression("$FSTART", hou.exprLanguage.Hscript)
+hou_parm_tuple[0].setKeyframe(hou_keyframe)
+
+# Code for keyframe.
+hou_keyframe = hou.Keyframe()
+hou_keyframe.setTime(0)
+hou_keyframe.setValue(1)
+hou_keyframe.useValue(False)
+hou_keyframe.setSlope(0)
+hou_keyframe.useSlope(False)
+hou_keyframe.setAccel(0)
+hou_keyframe.useAccel(False)
+hou_keyframe.setExpression("$FSTART", hou.exprLanguage.Hscript)
+hou_parm_tuple[0].setKeyframe(hou_keyframe)
+
+# Code for first keyframe.
+# Code for keyframe.
+hou_keyframe = hou.Keyframe()
+hou_keyframe.setTime(0)
+hou_keyframe.setValue(240)
+hou_keyframe.useValue(False)
+hou_keyframe.setSlope(0)
+hou_keyframe.useSlope(False)
+hou_keyframe.setAccel(0)
+hou_keyframe.useAccel(False)
+hou_keyframe.setExpression("$FEND", hou.exprLanguage.Hscript)
+hou_parm_tuple[1].setKeyframe(hou_keyframe)
+
+# Code for last keyframe.
+# Code for keyframe.
+hou_keyframe = hou.Keyframe()
+hou_keyframe.setTime(0)
+hou_keyframe.setValue(240)
+hou_keyframe.useValue(False)
+hou_keyframe.setSlope(0)
+hou_keyframe.useSlope(False)
+hou_keyframe.setAccel(0)
+hou_keyframe.useAccel(False)
+hou_keyframe.setExpression("$FEND", hou.exprLanguage.Hscript)
+hou_parm_tuple[1].setKeyframe(hou_keyframe)
+
+
+# Code for keyframe.
+hou_keyframe = hou.Keyframe()
+hou_keyframe.setTime(0)
+hou_keyframe.setValue(240)
+hou_keyframe.useValue(False)
+hou_keyframe.setSlope(0)\
+nhou_keyframe.useSlope(False)
+hou_keyframe.setAccel(0)
+hou_keyframe.useAccel(False)
+hou_keyframe.setExpression("$FEND", hou.exprLanguage.Hscript)
+hou_parm_tuple[1].setKeyframe(hou_keyframe)
+
+
+# Code for /out/SVG_exporter1/take parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+
+hou_parm = hou_node.parm("take")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("_current_")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/render_viewcamera parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("render_viewcamera")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(1)
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/camera parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("camera")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("/obj/cam1")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/override_camerares parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("override_camerares")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(0)
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/projection_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("projection_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("uv")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/attribute_rendering_resolution parm tuple
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+
+hou_parm_tuple = hou_node.parmTuple("attribute_rendering_resolution")
+hou_parm_tuple.lock((False, False))
+hou_parm_tuple.deleteAllKeyframes()
+hou_parm_tuple.set((1024, 1024))
+hou_parm_tuple.setAutoscope((False, False))
+
+
+# Code for /out/SVG_exporter1/attribute_scale_by_resolution parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("attribute_scale_by_resolution")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(1)
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/vm_picture parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("vm_picture")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("$HIP/render/$HIPNAME.$OS.$F4.svg")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/images_21 parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("images_21")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(0)
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/vobject parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("vobject")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("*")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/forceobject parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("forceobject")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()\
+nhou_parm.set("")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/excludeobject parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("excludeobject")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/z_sorting_method parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("z_sorting_method")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("avg")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_ex
+porter1/folder01 parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("folder01")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(0)
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/fill_color_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("fill_color_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("Cd")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/fill_alpha_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("fill_alpha_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("Alpha")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/stroke_color_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("stroke_color_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("Cd")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/stroke_alpha_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("stroke_alpha_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("Alpha")
+hou_parm.setAutoscope(False)
+
+
+#Code for /out/SVG_exporter1/stroke_width_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("stroke_width_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("width")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/force_stroke_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("force_stroke_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("stroke")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/stroke_linecap_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("stroke_linecap_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("linecap")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/stroke_linejoin_attribute parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("stroke_linejoin_attribute")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("linejoin")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/soho_program parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("soho_program")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("opdef:.?soho_program.py")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/soho_outputmode parm 
+if locals().get("hou_node") is None:
+     hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("soho_outputmode")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(2)
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/soho_diskfile parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("soho_diskfile")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set("`chs(\\"vm_picture\\")`")
+hou_parm.setAutoscope(False)
+
+
+# Code for /out/SVG_exporter1/soho_previewsupport parm 
+if locals().get("hou_node") is None:
+    hou_node = hou.node("/out/SVG_exporter1")
+hou_parm = hou_node.parm("soho_previewsupport")
+hou_parm.lock(False)
+hou_parm.deleteAllKeyframes()
+hou_parm.set(0)
+hou_parm.setAutoscope(False)
+
+
+hou_node.setExpressionLanguage(hou.exprLanguage.Hscript)
+
+hou_node.setUserData("___Version___", "")
+if hasattr(hou_node, "syncNodeVersionIfNeeded"):
+    hou_node.syncNodeVersionIfNeeded("")
